@@ -1,4 +1,6 @@
-#Send a ICMP message in loop, with the flag in payload
+#!/usr/bin/python3
+
+#Send a ICMP message in loop, wi²th the flag in payload
 #   input : IP dest
 #   Flag file has to be ./flag.txt
 
@@ -31,9 +33,8 @@ ip = sys.argv[1]
 if(testIP(ip)):
     exit(1)
 
-while True:
-    payload="flag="+flag
-    send(IP(dst=ip)/ICMP()/payload, loop=1, inter=5.0)
-    #time.sleep(5)
+
+payload="flag="+flag
+send(IP(dst=ip)/ICMP()/payload, loop=1, inter=5.0)
 
 

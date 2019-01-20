@@ -6,7 +6,7 @@
 
 
 ruser="fake"
-rmdp="1user"
+rmdp="user"
 
 ans1 = input("Please enter the user name : ")
 user= str(ans1)
@@ -17,8 +17,7 @@ if ruser != user:
 
 else:
     print("Well done !")
-    print("Please now enter the password : ")
-    ans2 = input("Please enter the user name : ")
+    ans2 = input("Please now enter the password : ")
     mdp= str(ans2)
 
     if rmdp != mdp:

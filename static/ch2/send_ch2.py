@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 #Send an UDP message in loop, with the flag in payload
 #   input : IP dest
 #   Flag file has to be ./flag.txt
@@ -5,7 +7,6 @@
 from scapy.all import *
 import sys
 import re
-import time
 
 def testIP(ip):
     regex = "^(\d{1,3}).(\d{1,3}).(\d{1,3}).(\d{1,3})$"
@@ -31,9 +32,6 @@ ip = sys.argv[1]
 if(testIP(ip)):
     exit(1)
 
-while True:
-    payload="flag="+flag
-    send(IP(dst=ip)/UDP()/payload)
-    time.sleep(5)
-
+payload="flag="+flag
+send(IP(dst=ip)/UDP(sport=5317,dport=4545)/payload, loop=1, inter=5.0)
 

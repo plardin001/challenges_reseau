@@ -17,8 +17,7 @@ if ruser != user:
 
 else:
     print("Well done !")
-    print("Please now enter the password : ")
-    ans2 = input("Please enter the user name : ")
+    ans2 = input("Please enter the password : ")
     mdp= str(ans2)
 
     if rmdp != mdp:
