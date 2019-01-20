@@ -5,13 +5,12 @@
 #    require : flag in ./flag.txt
 
 
-rans='726'
+rproto="6"
+ans = input("What is the real protocol over IP number ?  ")
+proto = str(ans)
 
-inp = input("Find the size of the legitimate http answer (in Bytes) :  ")
-ans = str(inp)
-
-if rans != ans:
-    print("Try again, hold on !")
+if proto != rproto:
+    print("Sorry, keep trying")
     exit(1)
 
 else:

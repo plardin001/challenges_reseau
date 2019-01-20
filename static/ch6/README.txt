@@ -7,8 +7,8 @@ in order to obtain the flag.
 
 #### Scenario ###
 
-Title : Lost protocol
+Title : IP fragmentation
 
-Description : The original protocol in the IP datagram header seems to have been altered. Use scapy and wireshark to recover it.
+Description : You have access to fragmented packet. Answer the questions about it.
 
-Instruction : run the check.py scrpit and provide the protocol number asked.
+Instruction : run the check.py scrpit and provide the information asked.

@@ -7,8 +7,8 @@ in order to obtain the flag.
 
 #### Scenario ###
 
-Title : Man on the Side Attack
+Title : Lost protocol
 
-Description : You wonder if it will rains today and want so to access to MoWeather iOS app, but the Chineese government doesn't seem to agree with you ...
+Description : The original protocol in the IP datagram header seems to have been altered. Use scapy and wireshark to recover it.
 
-Instruction : run the check.py script and provide the information asked.
+Instruction : run the check.py scrpit and provide the protocol number asked.
