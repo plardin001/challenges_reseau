@@ -2,11 +2,11 @@
 
 #Check the data found by the player and return the flag if success
 #    no input.
-#    require : flag in ./flag.tx
+#    require : flag in ./flag.txt
 
 
-ruser="remi"
-rmdp="fasol"
+ruser="fake"
+rmdp="1user"
 
 ans1 = input("Please enter the user name : ")
 user= str(ans1)
